@@ -1,0 +1,10 @@
+/* Write your desired CSS here */
+
+.container {
+    border: 2px solid red;
+    width: 60%;
+    margin: auto;
+}
+.hidden {
+    display: none;
+}
