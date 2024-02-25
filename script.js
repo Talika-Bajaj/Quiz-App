@@ -33,7 +33,7 @@ function showQuestion(data) {
     let answersList = document.querySelector(".answersList")
     answersList.innerHTML = `
     ${answer.map((ans) =>
-        `<button>${ans}</button>`
+        `<button class="btn">${ans}</button>`
     ).join(" ")} `;
     // let answersList = document.querySelector(".answersList")
     answersList.querySelectorAll("button").forEach(element => {
