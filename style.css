@@ -14,8 +14,8 @@ body {
     flex-direction: column;
     gap: 20px;
     /* border: 2px solid red; */
-    width: 45%;
-    padding: 35px;
+    width: 50vw;
+    padding: 45px;
     margin: auto;
     background-color:#eee;
     border-radius: 12px;
@@ -73,13 +73,13 @@ body {
 }
 
 #question {
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
 .btn {
     margin: 4px 1px;
-    font-size: 17.5px;
+    font-size: 18px;
     padding: 12px 15px;
     background-color: cornflowerblue;
     color: white;
@@ -90,7 +90,7 @@ body {
 }
 
 .btn:hover {
-    font-size: 18px;
+    background-color: mediumseagreen;
 }
 
 #timer {
@@ -101,12 +101,12 @@ body {
     color: white;
     text-align: center;
     margin: auto;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 #scoreDisplay {
     width: 100%;
-    font-size: 19px;
+    font-size: 20px;
     padding: 18px 10px;
     border-radius: 12px;
     background-color: salmon;
@@ -115,8 +115,15 @@ body {
     margin: auto;
 }
 
-
 /* end-screen */
+#endScreen {
+  flex-direction: column;
+}
+
+#endScreen.active {
+    display: flex;
+}
+
 #game-over {
     font-size: 36px;
 }
