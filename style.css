@@ -89,10 +89,6 @@ body {
     transition: 0.4s ease;
 }
 
-.btn:hover {
-    background-color: mediumseagreen;
-}
-
 #timer {
     width: 100%;
     padding: 18px 10px;
@@ -152,5 +148,5 @@ p {
 
 #playAgain:hover {
     background-color: black;
-    color: red;
+    color: wheat;
 }
