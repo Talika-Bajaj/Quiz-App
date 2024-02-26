@@ -8,11 +8,10 @@ async function getQuestions() {
     let data = await question.json();
     console.log(data);
     console.log(data.response_code);
-    if (data.response_code === 0) {
+    try {
         showQuestion(data.results[0]);
-    } else {
+    } catch(error) {
         document.getElementById("question").innerHTML = "Error fetching question.Please try again";
-        score-= 10;
     }
 
 }
@@ -21,7 +20,6 @@ getQuestions();
 
 
 function showQuestion(data) {
-    try {
 
         console.log(data);
         console.log(data.correct_answer);
@@ -45,15 +43,28 @@ function showQuestion(data) {
         ).join(" ")} `;
         // let answersList = document.querySelector(".answersList")
         answersList.querySelectorAll("button").forEach(element => {
-            if (element.innerHTML === correct_answer) {
-                element.addEventListener("click", correctAnswer)
+            if (element.innerHTML !== correct_answer) {
+                element.addEventListener("click", ()=> {
+                    element.style.backgroundColor = "#a42626";
+                    setTimeout(()=> {
+                        getQuestions();
+                    }, 500)
+                });
+            } else {
+                element.addEventListener("click", ()=> {
+                    score += 10;
+                    console.log("it is correct");
+                    element.style.backgroundColor = "mediumseagreen";
+                    setTimeout(()=> {
+                        getQuestions();
+                        updateScore();
+
+                    }, 500)
+                });
             }
 
         });
-    } catch (error) {
-        question.innerHTML = "Error in fetching question. Please Wait";
-        console.log(error);
-    }
+    
 }
 
 function countDown(seconds) {
@@ -77,6 +88,7 @@ function correctAnswer() {
     getQuestions();
     updateScore();
 }
+
 
 function updateScore() {
     document.getElementById("score").innerHTML = score;
