@@ -84,7 +84,7 @@ function updateScore() {
 
 function endQuiz() {
     document.getElementById("quizScreen").classList.remove("active");
-    document.getElementById("endScreen").classList.remove("hidden");
+    document.getElementById("endScreen").classList.add("active");
     let endMsg = document.getElementById("endMessage");
     let finalScore = document.getElementById("finalScore");
 
@@ -110,7 +110,7 @@ startQuiz.addEventListener("click", () => {
 
 playAgain.addEventListener("click", () => {
     document.getElementById("quizScreen").classList.add("active");
-    document.getElementById("endScreen").classList.add("hidden");
+    document.getElementById("endScreen").classList.remove("active");
 
     getQuestions();
     countDown(60);
