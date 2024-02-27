@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Donegal+One&family=Nova+Slim&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kreon:wght@300..700&family=Laila:wght@300;400;500;600;700&family=Marmelad&family=Salsa&display=swap');
+
 * {
     box-sizing: border-box;
+    /* font-family: "Arvo", serif; */
+    font-family: "Kreon", serif;
+    
+
 }
 
 body {
@@ -24,29 +30,33 @@ body {
 /* start-rules container */
 #start-rules h2 {
     margin-top: 22px;
-    font-size: 50px;
+    font-size: 54px;
     text-align: center;
     text-decoration: underline;
     color: blueviolet;
 }
 
 #start-rules h3 {
-    font-size: 34px;
+    font-size: 30px;
     color: green;
+    font-family: "Donegal One", serif;
 }
 
 #start-rules li {
-    font-size: 21px;
+    font-size: 20px;
+    /* font-family: "Marmelad", sans-serif; */
+    /* font-family: "Nova Slim", system-ui; */
+    font-family: "Donegal One", serif;
     color: red;
 }
 
 /* start-quiz button */
 #start-quiz {
-    font-size: 18.5px;
-    font-weight: 600;
+    font-size: 21.5px;
+    font-weight: 900;
     border: none;
     border-radius: 10px;
-    padding: 11px 17px;
+    padding: 11px 22px;
     transition: 0.4s ease;
     cursor: pointer;
     color: chocolate;
@@ -62,6 +72,7 @@ body {
 /* quiz-screen container */
 #quiz-screen {
     /* display: flex; */
+        font-family: "Arvo", serif;
     flex-direction: column;
     gap: 25px;
 }
@@ -75,16 +86,17 @@ body {
 }
 
 #question {
-    font-size: 30px;
+    font-size: 34px;
     margin-bottom: 15px;
 }
 
 .btn {
     margin: 4px 1px;
-    font-size: 18px;
+    font-size: 19.5px;
     padding: 12px 15px;
     background-color: cornflowerblue;
     color: white;
+    font-weight: 500;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -99,12 +111,12 @@ body {
     color: white;
     text-align: center;
     margin: auto;
-    font-size: 20px;
+    font-size: 21.5px;
 }
 
 #score-display {
     width: 100%;
-    font-size: 20px;
+    font-size: 21.5px;
     padding: 18px 10px;
     border-radius: 12px;
     background-color: salmon;
@@ -123,11 +135,11 @@ body {
 }
 
 #game-over {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 p {
-    font-size: 20px;
+    font-size: 23px;
 }
 
 /* remarks */
@@ -138,12 +150,13 @@ p {
 
 /* play-again button */
 #play-again {
-    font-size: 18.5px;
-    font-weight: 600;
+    font-size: 23px;
+    font-weight: 900;
     border: none;
     border-radius: 10px;
     padding: 13px 16px;
-    color: chocolate;
+    /* color: chocolate; */
+    color: white;
     background-color: #223737;
     transition: 0.4s ease;
     cursor: pointer;
