@@ -106,7 +106,7 @@ function endQuiz() {
         endMsg.innerHTML = `<span style = "color: black">Remarks: </span> You played good`;
     }
 
-    finalScore.innerHTML = `<span style = "font-weight:600">Final score: </span> ${score}`;
+    finalScore.innerHTML = `<span style = "font-weight:900">Final score: </span> ${score}`;
 }
 
 //event listener to start the quiz
