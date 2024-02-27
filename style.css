@@ -1,14 +1,14 @@
 * {
-    /* margin: 0;
-    padding: 0; */
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(71, 62, 62);
+    background-color: #b08f8f;
     height: 96vh;
     display: flex;
 }
+
+/* container */
 .container {
     display: flex;
     flex-direction: column;
@@ -17,10 +17,11 @@ body {
     width: 50vw;
     padding: 45px;
     margin: auto;
-    background-color:#eee;
+    background-color: #eee;
     border-radius: 12px;
 }
 
+/* start-rules container */
 #start-rules h2 {
     margin-top: 22px;
     font-size: 50px;
@@ -39,7 +40,8 @@ body {
     color: red;
 }
 
-#startQuiz {
+/* start-quiz button */
+#start-quiz {
     font-size: 18.5px;
     font-weight: 600;
     border: none;
@@ -51,14 +53,14 @@ body {
     background-color: #223737;
 }
 
-#startQuiz:hover {
+#start-quiz:hover {
     background-color: chocolate;
     /* border: 2px solid indianred; */
     color: #223737;
 }
 
-
-#quizScreen {
+/* quiz-screen container */
+#quiz-screen {
     /* display: flex; */
     flex-direction: column;
     gap: 25px;
@@ -68,7 +70,7 @@ body {
     display: none;
 }
 
-#quizScreen.active {
+#quiz-screen.active {
     display: flex;
 }
 
@@ -100,7 +102,7 @@ body {
     font-size: 20px;
 }
 
-#scoreDisplay {
+#score-display {
     width: 100%;
     font-size: 20px;
     padding: 18px 10px;
@@ -111,12 +113,12 @@ body {
     margin: auto;
 }
 
-/* end-screen */
-#endScreen {
-  flex-direction: column;
+/* end-screen container*/
+#end-screen {
+    flex-direction: column;
 }
 
-#endScreen.active {
+#end-screen.active {
     display: flex;
 }
 
@@ -128,13 +130,14 @@ p {
     font-size: 20px;
 }
 
-#endMessage {
+/* remarks */
+#end-message {
     font-size: 22px;
     color: crimson;
 }
 
-
-#playAgain {
+/* play-again button */
+#play-again {
     font-size: 18.5px;
     font-weight: 600;
     border: none;
@@ -143,10 +146,10 @@ p {
     color: chocolate;
     background-color: #223737;
     transition: 0.4s ease;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
-#playAgain:hover {
+#play-again:hover {
     background-color: black;
     color: wheat;
 }
